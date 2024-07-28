@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+@import url('colors.css');
+.skills {
+    color: var(--text-color);
+    text-shadow: 0px 0px 25px #5557cb;
+}
+.skills{
+    padding: 5rem 0 2.5rem 0;
+}
+.skills > .text{
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+.skills .row{
+    margin: 1rem 0;
+}
+.skills .item{
+    padding: 0.5rem 0;
+    margin: 0.3rem 0;
+}
+.skills .item-text{
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.3rem;
+    position: relative;
+    color: var(--text-color);
+}
+.skills .item-text span:last-child{
+    position: absolute;
+}
+.skills .item-text .w-90{
+    margin-left: 85%;
+}
+.skills .item-text .w-75{
+    margin-left: 70%;
+}
+.skills .item-text .w-85{
+    margin-left: 80%;
+}
+.skills .item-text .w-80{
+    margin-left: 75%;
+}
+.skills .item-text .w-60{
+    margin-left: 55%;
+}
+.skills .item-text .w-68{
+    margin-left: 63%;
+}
+.progress{
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: var(--header-color);
+    overflow: hidden;
+}
+.progress-bar{
+    background: blueviolet;
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.progress-bar.w-95{
+    width: 95%;
+}
+.progress-bar.w-90{
+    width: 90%;
+}
+.progress-bar.w-85{
+    width: 85%;
+}
+.progress-bar.w-80{
+    width: 80%;
+}
+.progress-bar.w-76{
+    width: 76%;
+}
+.progress-bar.w-70{
+    width: 70%;
+}
+.progress-bar.w-60{
+    width: 60%;
+}

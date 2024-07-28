@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bristidev's Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/transition.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/transition.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- NAVBAR -->
+        <div class="row header transition-section" id="section1">
+            <div class="container-fluid">
+                <div class="row justify-content-md-between">
+                    <div class="col-12 col-lg-4 logoarea">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a href="#">Bristidev's Portfolio</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 navi-area">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#section1">Home </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#section3">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#section4">Skills</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#section5">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#section6">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INTRO -->
+        <div class="row intro mb-5 pb-5 transition-section" id="section2">
+            <div class="container">
+                <div class="row mt-5 mb-5 pb-5">
+                    <div class="col-sm-6 left mt-5 pl-xl-5 d-flex justify-content-center flex-column">
+                        <div>
+                            <div class="mt-5 ml-5">Hi, I am <span class="emphasize">Bristidev</span></div>
+                            <div class="ml-5">I am a</div>
+                            <span id="element" class="emphasize ml-5"></span>
+                            <script>
+                                var typed = new Typed('#element', {
+                                    strings: ['Student.', 'Fresher.', 'Web Developer.', 'Eager Learner.'],
+                                    typeSpeed: 50,
+                                    backSpeed: 50, // Speed at which to erase the text
+                                    backDelay: 1000, // Delay before starting to erase
+                                    loop: true, // Enable looping
+                                    loopCount: Infinity // Optional: Set loop count to infinite
+                                });
+                            </script>
+                        </div>
+                        <div class="mt-5">
+                            <a href="files/BristidevBurman_Resume_Kolkata.pdf"
+                                class="btn btn-outline-light btn-lg mt-5 ml-5" download>View Resume</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-5 right d-flex align-items-center justify-content-center">
+                        <div class="rounded-gradient-borders mt-5">
+                            <img src="images/me_formal.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <div class="row about transition-section mt-5 mb-5 pb-5" id="section3">
+            <div class="container">
+                <h1 class="text-center heading">ABOUT ME</h1>
+                <div class="row mt-5">
+                    <div class="col-12 text-center writing">
+                        <div>I am a student and an eager developer who is proficient in the Java programming language
+                            and is knowledgeable in HTML, CSS, and JavaScript. I am committed to improving my skills in
+                            Java software, growth and development skills, and front-end web technologies. I am
+                            passionate
+                            about learning and happy to contribute to projects that make use of languages.
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 mb-6 d-flex justify-content-xl-center justify-content-sm-between">
+                    <ul>
+                        <li class="d-flex justify-content-sm-between ">
+                            <span class="emphasize">NAME: </span>
+                            <span>Bristidev Burman</span>
+                        </li>
+                        <li class="d-flex justify-content-sm-between">
+                            <span class="emphasize">DATE OF BIRTH: </span>
+                            <span>19th March, 2004</span>
+                        </li>
+                        <li class="d-flex justify-content-sm-between">
+                            <span class="emphasize">ADDRESS: </span>
+                            <span>21, Rabindranagar, Kolkata-700108</span>
+                        </li>
+                        <li class="d-flex justify-content-sm-between">
+                            <span class="emphasize">CONTACT: </span>
+                            <span>+91-9330243841</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <span class="emphasize">EMAIL-ID: </span>
+                            <span>&nbsp;bristidev2004@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div class="row  d-flex align-items-center">
+                    <div class="col-md-6 mt-5">
+                        <div class="heading emphasize">
+                            <h2>MY GRADES</h2>
+                        </div>
+                        <div class="sub-heading">Class X: 94.50% <br>Class XII: 97.50%</div>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <div class="heading emphasize">
+                            <h2>MY CGPA</h2>
+                        </div>
+                        <div class="sub-heading">9.20 / 10.0 (up to 5th Semester)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SKILLS SECTION -->
+
+        <div class="row skills transition-section" id="section4">
+            <div class="container">
+                <h1 class="text-center heading">MY SKILLS</h1>
+                <div class="row">
+                    <div class=" col-12 col-lg-6">
+                        <div class="item">
+                            <div class="item-text">
+                                <span>HTML</span>
+                                <span class="w-90">90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar w-90"></div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-text">
+                                <span>CSS</span>
+                                <span class="w-85">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar w-85"></div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-text">
+                                <span>JavaScript</span>
+                                <span class="w-80">80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar w-80"></div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-text">
+                                <span>BootStrap</span>
+                                <span class="w-85">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar w-85"></div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-text">
+                                <span>Oracle SQL</span>
+                                <span class="w-75">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar w-75"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="item">
+                            <div class="item-text">
+                                <span>Python(Basics)</span>
+                                <span class="w-85">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar w-85"></div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-text">
+                                <span>C</span>
+                                <span class="w-75">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar w-75"></div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-text">
+                                <span>C++</span>
+                                <span class="w-85">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar w-85"></div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-text">
+                                <span>Java</span>
+                                <span class="w-85">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar w-85"></div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-text">
+                                <span>Git</span>
+                                <span class="w-60">60%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar w-60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECTS SECTION -->
+
+        <div class="row project transition-section mt-5 mb-5" id="section5">
+            <div class="container mt-5">
+                <h1 class="text-center heading  mt-5 mb-5">MY PROJECTS</h1>
+                <div class="row">
+                    <!-- First Column -->
+                    <div class="col-md-6">
+                        <!-- First Card -->
+                        <div class="project-card">
+                            <img src="images/project1.jpg" class="card-img" alt="Project 1 Image">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title sub-heading emphasize">CREDIT CARD FRAUD DETECTION</h4>
+                                <p class="card-text">About
+                                    A Machine Learning project which checks whether the credit card is fraud or
+                                    authentic depending on several paramaters</p>
+                                <a href="https://github.com/Dev1903/Credit-Card-Fraud-Detection"
+                                    class="btn btn-outline-light" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                        <!-- Second Card -->
+                        <div class="project-card">
+                            <img src="images/project2.jpg" class="card-img" alt="Project 2 Image">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title sub-heading emphasize">NO SLEEP GOGGLES</h4>
+                                <p class="card-text">This project utilizes an Arduino Nano and an IR sensor which detects closed
+                                    eyes for 2 seconds or more, it stops the motorized car, activates a buzzer, and
+                                    lights up a red LED as a warning until the eyes are opened again.</p>
+                                <a href="https://github.com/Dev1903/No-Sleep-Goggles" class="btn btn-outline-light"
+                                    target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Column -->
+                    <div class="col-md-6">
+                        <!-- Third Card -->
+                        <div class="project-card">
+                            <img src="images/project3.jpg" class="card-img" alt="Project 3 Image">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title sub-heading emphasize">AUTOMATED HOME SAFETY DEVICE</h4>
+                                <p class="card-text">This project involves creating a home safety monitoring system
+                                    using ESP8266 microcontroller, various sensors, and Blynk for real-time monitoring
+                                    and control.</p>
+                                <a href="https://github.com/Dev1903/Automated-Home-Safety-Device"
+                                    class="btn btn-outline-light" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                        <!-- Fourth Card -->
+                        <div class="project-card">
+                            <img src="images/project4.jpg" class="card-img" alt="Project 4 Image">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title sub-heading emphasize">AUTOMATED BABY PLANT MONITORING SYSTEM</h4>
+                                <p class="card-text">This project implements an automated irrigation system using
+                                    Arduino to monitor soil moisture, rain, light intensity, and humidity.</p>
+                                <a href="https://github.com/Dev1903/Automated-Baby-Plant-Monitoring"
+                                    class="btn btn-outline-light" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT SECTION -->
+
+        <div class="row footer transition-section mt-5  pb-5" id="section6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="mt-5 mb-5">
+                            <h2 class="heading">Get in Touch</h2>
+                        </div>
+                        <div>
+                            <div class="mt-3 pt-3 mb-3">
+                                <i class="fa-solid fa-location-dot" style="color: #8a2be2;"></i>
+                                <a href="https://maps.app.goo.gl/oUrYopBB5dCXMdkx9">21, Rabindranagar,
+                                    Kolkata-700108</a>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <i class="fa-solid fa-phone" style="color: #8a2be2;"></i></i>
+                                <a href="tel:+919330243841">+91-9330243841</a>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <i class="fa-solid fa-envelope" style="color: #8a2be2;"></i>
+                                <a href="mailto:bristidev2004@gmail.com">bristidev2004@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="mt-5 mb-5">
+                            <h2 class="heading">Links</h2>
+                        </div>
+                        <div>
+                            <div class="mt-3 mb-3">
+                                <i class="fa-solid fa-arrow-right" style="color: #8a2be2;"></i>
+                                <a href="#section1">HOME</a>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <i class="fa-solid fa-arrow-right" style="color: #8a2be2;"></i>
+                                <a href="#section3">ABOUT ME</a>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <i class="fa-solid fa-arrow-right" style="color: #8a2be2;"></i>
+                                <a href="#section4">MY SKILLS</a>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <i class="fa-solid fa-arrow-right" style="color: #8a2be2;"></i>
+                                <a href="#section5">MY PROJECTS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="row justify-content-center">
+                            <div class="mt-5 mb-5">
+                                <h2 class="social-heading heading">Socials</h2>
+                            </div>
+                        </div>
+                        <div class="row socials">
+                            <div class="mt-3 mb-3 ml-5 mr-5">
+                                <a href="https://www.linkedin.com/in/bristidev-burman1903" target="_blank"><i class="fa-brands fa-linkedin" style="color: #8a2be2;"></i></a>
+                            </div>
+                            <div class="mt-3 mb-3 ml-5 mr-5">
+                                <a href="https://www.instagram.com/bristidev.burman2004" target="_blank"><i class="fa-brands fa-instagram" style="color: #8a2be2;"></i></a>
+                            </div>
+                            <div class="mt-3 mb-3 ml-5">
+                                <a href="https://www.github.com/Dev1903" target="_blank"><i class="fa-brands fa-github" style="color: #8a2be2;"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,11 @@
+.transition-section {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-20px); /* Start from slightly above */
+    transition: opacity 1.5s ease, transform 1.5s ease; /* Transition for opacity and transform */
+}
+
+/* Styles when the section becomes visible */
+.transition-section.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
