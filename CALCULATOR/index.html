@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container  mt-4 pt-5">
+        <div class="calculator-container mt-4 pt-4">
+            <!-- Whole Calculator -->
+            <div class="row">
+                <!-- DISPLAY -->
+                <div class="col">
+                    <div class="row">
+                        <div class="col-12 text-end pt-2 pb-2 display-container">
+                            <span id="display">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-spacing">
+                <!-- BUTTONS -->
+                <div class="col">
+                    <div class="row g-1 mt-1 mb-1">
+                        <div class="col-6">
+                            <!-- CE -->
+                            <button class="btn btn-dark w-100 py-3 btn-ce" onclick="delete_text()">
+                                <span>CE</span>
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <!-- BACKSPACE -->
+                            <button class="btn btn-dark w-100 py-3" onclick="backspace()">
+                                <span>
+                                    <i class="fa-solid fa-delete-left"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <!-- DIVIDE -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('/')">
+                                <span>
+                                    <i class="fa-solid fa-divide"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row g-1 mt-1 mb-1">
+                        <div class="col-3">
+                            <!-- 7 -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('7')">
+                                <span>7</span>
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <!-- 8 -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('8')">
+                                <span>8</span>
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <!-- 9 -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('9')">
+                                <span>9</span>
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <!-- MULTIPLY -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('*')">
+                                <span>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row g-1 mt-1 mb-1">
+                        <div class="col-3">
+                            <!-- 4 -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('4')">
+                                <span>4</span>
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <!-- 5 -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('5')">
+                                <span>5</span>
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <!-- 6 -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('6')">
+                                <span>6</span>
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <!-- SUBTRACTION -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('-')">
+                                <span>
+                                    <i class="fa-solid fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row g-1 mt-1 mb-1">
+                        <div class="col-3">
+                            <!-- 1 -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('1')">
+                                <span>1</span>
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <!-- 2 -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('2')">
+                                <span>2</span>
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <!-- 3 -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('3')">
+                                <span>3</span>
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <!-- ADDITION -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('+')">
+                                <span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row g-1 mt-1 mb-1">
+                        <div class="col-3">
+                            <!-- DOT -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('.')">
+                                <span>.</span>
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <!-- 0 -->
+                            <button class="btn btn-dark w-100 py-3" onclick="append('0')">
+                                <span>0</span>
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <!-- EQUALS -->
+                            <button class="btn btn-dark w-100 py-3 btn-equals" onclick="append('=')">
+                                <span>
+                                    <i class="fa-solid fa-equals"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</header>
+</html>

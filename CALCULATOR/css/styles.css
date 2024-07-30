@@ -1,0 +1,85 @@
+/* Calculator container styling */
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+body {
+    background-image: url('../images/background\ \(2\).png'); /* Replace with the path to your image */
+    background-size: cover; /* Ensure the image covers the whole screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+}
+/* Make sure the calculator container remains as is */
+.calculator-container {
+    background-color: #1e1e1e; /* Dark grey background for the calculator */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+    max-width: 350px; /* Maximum width for the calculator */
+    margin: 0 auto; /* Centering the container */
+    padding: 20px; /* Padding inside the container */
+}
+
+/* Display area styling */
+#display {
+    font-size: xxx-large; /* Font size for the display text */
+    color: #f5f5f5; /* Light text color for better readability */
+    overflow-x: auto; /* Allow horizontal scrolling if text is too long */
+    white-space: nowrap; /* Prevent line break */
+}
+
+/* Row spacing */
+.row-spacing {
+    margin-top: 10px; /* Space between rows */
+    margin-bottom: 10px; /* Space between rows */
+}
+
+/* Button styling */
+.btn-dark {
+    background: linear-gradient(145deg, #333, #444); /* Gradient background */
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 2px 5px rgba(255, 255, 255, 0.3); /* 3D shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 8px; /* Rounded corners */
+    color: #f5f5f5; /* Light text color for better contrast */
+    font-weight: bold; /* Bold text for better visibility */
+}
+
+.btn-dark:hover {
+    background: linear-gradient(145deg, #444, #555); /* Slightly lighter gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5), inset 0 2px 5px rgba(255, 255, 255, 0.4); /* Enhanced shadow effect on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Button text styling */
+.btn span,
+.btn i {
+    font-size: 1.5em; /* Font size for button text and icons */
+    color: #f5f5f5; /* Light text color */
+}
+
+.btn-ce {
+    background: linear-gradient(145deg, #b23b3b, #8c2c2c); /* Dark reddish gradient background */
+    color: #ffffff; /* White text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 2px 5px rgba(255, 255, 255, 0.2); /* Shadow for depth */
+    transition: all 0.3s ease;
+}
+
+.btn-ce:hover {
+    background: linear-gradient(145deg, #8c2c2c, #732323); /* Slightly darker red on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), inset 0 2px 5px rgba(255, 255, 255, 0.25); /* Enhanced shadow effect on hover */
+    transform: translateY(-2px);
+}
+
+/* Specific styling for Equals button */
+.btn-equals {
+    background: linear-gradient(145deg, #1f6a1f, #144d14); /* Dark green gradient background */
+    color: #ffffff; /* White text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 2px 5px rgba(255, 255, 255, 0.2); /* Shadow for depth */
+    transition: all 0.3s ease;
+}
+
+.btn-equals:hover {
+    background: linear-gradient(145deg, #144d14, #0f3c0f); /* Slightly darker green on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), inset 0 2px 5px rgba(255, 255, 255, 0.25); /* Enhanced shadow effect on hover */
+    transform: translateY(-2px);
+}
