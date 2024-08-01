@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&display=swap');
+
+* {
+    scroll-behavior: smooth;
+}
+
+#header-and-banner {
+    background-image: url("images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-contents {
+    height: 80px;
+}
+
+.header-contents .logoarea {
+    font-family: "Playwrite HR", cursive;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: black;
+}
+
+.header-contents .naviarea ul li a {
+    font-size: larger;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: black;
+    transition: transform ease 0.3s;
+}
+
+.header-contents .naviarea ul li a:hover {
+    transform: scale(1.1);
+    font-weight: 490;
+    color: rgb(124, 124, 124);
+    transition: transform color ease 0.3s;
+}
+
+.right i {
+    background-color: rgba(65, 62, 62, 0.634);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 21px;
+    color: white;
+}
+
+.right i:hover {
+    color: rgb(124, 124, 124);
+}
+
+.heading {
+    padding-left: 200px;
+    font-size: xxx-large;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.heading .btn {
+    margin-left: 100px;
+    transition: transform ease-in-out 0.3s;
+}
+
+.heading .btn:hover {
+    transform: scale(1.04);
+    transition: transform ease-in-out 0.3s;
+}
+
+.banner {
+    min-height: 260px;
+}
+
+#about {
+    background-image: url("images/about.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Dosis", sans-serif;
+    font-size: x-large;
+}
+
+.about-banner {
+    min-height: 300px;
+}
+
+#review .cards {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    transition: transform ease-in-out 0.4s;
+}
+
+#review .cards:hover {
+    transform: scale(1.05);
+    transition: transform ease-in-out 0.4s;
+}
+
+#review .cards .stars span {
+    padding: 0 10px 0 0;
+    font-size: x-large;
+}
+
+#review .cards .stars span:nth-child(1) {
+    padding: 0 10px 0 55px;
+    font-size: x-large;
+}
+
+#review .cards img {
+    border-radius: 50%;
+    margin: 0 0 0 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+#review .cards .text-center {
+    padding: 0 50px;
+}
+
+#review .cards .desc .container {
+    padding: 0 50px;
+    font-family: "Dosis", sans-serif;
+}
+
+#contact .form-control {
+    height: 50px;
+    width: 150px;
+    border-radius: 0;
+}
+
+#contact h2 {
+    font-family: "Exo 2", sans-serif;
+}
+
+#contact .btn {
+    border: 5px solid white;
+}
+
+#contact a {
+    color: white;
+}
+
+#contact ul li {
+    list-style: square;
+    font-size: large;
+}
+
+#contact ul li::marker {
+    color: white;
+}
+
+#contact h3 {
+    font-family: "Roboto Mono", monospace;
+}
+
+#contact i, #contact ul li{
+    transition: transform ease 0.3s;
+}
+
+#contact i:hover, #contact ul li:hover{
+    transform: scale(1.1);
+    transition: transform ease 0.3s;
+}
+
+@media(max-width:992px) {
+    .banner {
+        min-height: 300px;
+    }
+
+    .header-contents .logoarea {
+        font-size: x-large;
+    }
+
+    .right i {
+        position: absolute;
+        margin-top: -20px;
+    }
+
+    .heading {
+        padding-left: 100px;
+        font-size: xx-large;
+    }
+
+    .heading div:nth-child(2) {
+        padding-left: 15px;
+    }
+
+    .heading .btn {
+        margin-left: 0px;
+    }
+
+    .navbar-toggler {
+        background-color: rgba(65, 62, 62, 0.634);
+        border: none;
+        margin-left: -40px;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 80px;
+        padding: 0 230px 0 20px;
+        margin-left: -35px!important;
+        border-radius: 20px;
+        background-color: rgba(65, 62, 62, 0.634);
+        backdrop-filter: blur(5px);
+    }
+
+    .nav-item {
+        padding: 10px 0;
+    }
+
+    .header-contents .naviarea ul li a {
+        color: white !important;
+    }
+
+    #about {
+        font-size: medium;
+    }
+}
